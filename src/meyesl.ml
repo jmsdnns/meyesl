@@ -23,7 +23,6 @@ module Scanner = struct
   let scan_port target port timeout =
     let open Lwt.Infix in
     let connect_task = open_port target port timeout in
-    (*let timeout_task = Lwt_unix.sleep timeout >>= fun () -> Lwt.fail Lwt_unix.Timeout in*)
     let timeout_task = Lwt_unix.sleep timeout >>= fun () -> Lwt.fail Lwt.Canceled in
     Lwt.pick [connect_task (); timeout_task] >>= function
     | Some port -> Lwt.return (Some port)
