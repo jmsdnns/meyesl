@@ -1,6 +1,6 @@
 # Meyesl
 
-![](cybercamel.jpg)
+![An cyberspacy looking background with the words HACK THE PLANET and MEYESL written on top, with an out of place ordinary camel staring at us while standing on MEYESL](cameltheplanet.jpg)
 
 _Meyesl is a nonblocking port scanner, written to help me learn Ocaml_ 🐪
 
